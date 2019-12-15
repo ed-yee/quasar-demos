@@ -13,20 +13,21 @@
         :title="event.site.name"
         :color="colorScheme[idx]"
       >
-        <template v-slot:subtitle>
-          <span>Travel Distance:</span>
-          <span class="q-ml-sm">{{event.travel.distanceFrom}}</span>
-          <span class="q-ml-lg">Travel Time:</span>
-          <span class="q-ml-sm">{{event.travel.duration}}</span>
-        </template>
-        <div>
+        <div class="" style="min-height: 100px;">
           <div style="display: inline-block;">
             <div class="text-subtitle1">{{event.site.address.street}}, {{event.site.address.city}}, {{event.site.address.state}} {{event.site.address.postal}}</div>
             <div class="text-subtitle2">
               ({{event.onsightType}}) {{event.onsightDesc}}
             </div>
           </div>
-          <div class="float-right text-left q-mt-sm" style="width: 130px">
+          <div class="absolute-top-right text-left q-mt-sm bg-grey-3 q-pa-sm" style="width: 180px">
+            <div class="q-mb-md">
+              <q-icon name="mdi-map-marker-distance" color="blue-9" size="xs"></q-icon>
+              <span class="q-ml-xs">{{event.travel.distanceFrom}}</span>
+              <q-icon name="mdi-car" color="blue-9" size="xs" class="q-ml-lg"></q-icon>
+              <span class="q-ml-xs">{{event.travel.duration}}</span>
+            </div>
+
               <q-icon name="mdi-clock-start" color="amber-10"></q-icon> {{event.startTime}}
               <q-icon name="mdi-clock-end q-ml-sm" color="amber-10"></q-icon> {{event.endTime}}<br>
               <span class="text-amber-10">Promise:</span> {{event.promise}}
