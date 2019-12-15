@@ -1,6 +1,6 @@
 # Quasar Demos (quasar-demos)
 
-A Quasar demos app
+A Quasar demos (Electron) app
 
 ## Install Quasar CLI
 
