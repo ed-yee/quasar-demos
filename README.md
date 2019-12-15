@@ -13,10 +13,10 @@ npm install
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
-quasar dev
+quasar dev -m electron
 ```
 
-You can also use `npm start`.
+You can also use `npm start` if you use NPM.
 
 
 ### Build the app for production
